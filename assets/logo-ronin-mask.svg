@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Neon Ronin mask logo</title>
+  <desc id="desc">A futuristic ronin mask in neon green and pink.</desc>
+  <rect width="320" height="320" rx="48" fill="#090910"/>
+  <path d="M64 82L160 48L256 82L232 228L160 272L88 228Z" fill="#11111a" stroke="#c7ff61" stroke-width="8" stroke-linejoin="miter"/>
+  <path d="M94 122L140 142L160 126L180 142L226 122L212 184L180 218L160 232L140 218L108 184Z" fill="#090910" stroke="#ff6a9c" stroke-width="8" stroke-linejoin="miter"/>
+  <path d="M112 154L146 166M208 154L174 166" fill="none" stroke="#c7ff61" stroke-width="10" stroke-linecap="square"/>
+  <path d="M160 166V204M137 205H183" fill="none" stroke="#f3f0f7" stroke-width="7" stroke-linecap="square"/>
+  <path d="M64 82L112 108M256 82L208 108" fill="none" stroke="#c7ff61" stroke-width="7"/>
+</svg>

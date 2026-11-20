@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Neon Ronin katana logo</title>
+  <desc id="desc">A diagonal katana blade forming an N over a circular pink sun.</desc>
+  <rect width="320" height="320" rx="48" fill="#090910"/>
+  <circle cx="160" cy="160" r="112" fill="none" stroke="#ff6a9c" stroke-width="8"/>
+  <path d="M92 238L228 82" fill="none" stroke="#c7ff61" stroke-width="22" stroke-linecap="square"/>
+  <path d="M77 252L102 230" fill="none" stroke="#f3f0f7" stroke-width="18" stroke-linecap="square"/>
+  <path d="M228 82L247 63" fill="none" stroke="#f3f0f7" stroke-width="10" stroke-linecap="square"/>
+  <path d="M95 102V218M95 102L224 218V102" fill="none" stroke="#f3f0f7" stroke-width="12" stroke-linejoin="miter"/>
+  <path d="M65 160H255" fill="none" stroke="#c7ff61" stroke-width="3" opacity=".35"/>
+</svg>

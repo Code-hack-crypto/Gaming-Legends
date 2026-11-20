@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#090910">
+    <meta name="description" content="Choose a world, follow its signal, and discover an original story from the other side.">
+    <title>Choose your world — NEON//RONIN</title>
+    <link rel="icon" type="image/svg+xml" href="assets/logo-ronin-mask.svg">
+    <link rel="apple-touch-icon" href="assets/logo-ronin-mask.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="index.html#discover" aria-label="Neon Ronin home">
+          <img class="brand-mark brand-logo" src="assets/logo-ronin-mask.svg" alt="" aria-hidden="true">
+          <span class="brand-name">NEON<span>//</span>RONIN</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+          <span></span><span></span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+          <a class="nav-link" href="index.html#discover">Discover</a>
+          <a class="nav-link" href="games.html#games" target="_blank" rel="noopener noreferrer">Games</a>
+          <a class="nav-link" href="#worlds">Game worlds</a>
+          <a class="nav-link" href="index.html#signal">Our signal</a>
+          <a class="nav-music" href="#music"><span aria-hidden="true">♫</span> NOW PLAYING</a>
+          <a class="nav-cta" href="arcade.html" target="_blank" rel="noopener noreferrer">Enter the arcade <span aria-hidden="true">↗</span></a>
+          <p class="header-note">Website made by a 12 year old and published during Literature Composition class.</p>
+        </nav>
+      </header>
+
+      <main>
+        <section class="worlds section-wrap" id="worlds" aria-labelledby="worlds-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow section-eyebrow"><span class="section-number">01</span> YOUR PORTAL STARTS HERE</p>
+              <h1 class="worlds-title" id="worlds-title">Choose your <span>world.</span></h1>
+            </div>
+            <a class="text-link all-worlds" href="#world-grid">View all worlds <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="world-invitation">Choose a signal. Step inside. Every world has a story to tell.</p>
+          <div class="world-toolbar">
+            <div class="filter-tabs" role="group" aria-label="Filter game worlds">
+              <button class="filter-button selected" type="button" data-filter="all" aria-pressed="true">All worlds <span>06</span></button>
+              <button class="filter-button" type="button" data-filter="action" aria-pressed="false">Action</button>
+              <button class="filter-button" type="button" data-filter="chill" aria-pressed="false">Chill</button>
+              <button class="filter-button" type="button" data-filter="classic" aria-pressed="false">Classics</button>
+            </div>
+            <label class="search-box">
+              <span class="sr-only">Search game worlds</span>
+              <span aria-hidden="true">⌕</span>
+              <input id="game-search" type="search" placeholder="Find your world..." autocomplete="off">
+              <kbd>/</kbd>
+            </label>
+          </div>
+          <div class="world-grid" id="world-grid">
+            <article class="game-card card-crimson" data-category="action" data-name="oni's path">
+              <button class="game-art world-trigger" type="button" aria-label="Enter Oni's Path" aria-haspopup="dialog" aria-controls="world-dialog" data-world="oni">
+                <img class="game-image" src="assets/oni-kyoto.jpg" alt="" loading="lazy" decoding="async">
+                <span class="game-number">NR—001</span><span class="game-open" aria-hidden="true">↗</span>
+                <span class="game-art-title">ONI'S<br>PATH</span>
+                <span class="game-tag">ACTION RPG</span>
+              </button>
+              <div class="game-details"><div><h3>Oni's Path</h3><p>One blade. A thousand ghosts.</p></div><span class="game-rating">✦ 4.9</span></div>
+            </article>
+            <article class="game-card card-drift" data-category="chill" data-name="midnight drift">
+              <button class="game-art world-trigger" type="button" aria-label="Enter Midnight Drift" aria-haspopup="dialog" aria-controls="world-dialog" data-world="midnight">
+                <img class="game-image" src="assets/midnight-tokyo.jpg" alt="" loading="lazy" decoding="async">
+                <span class="game-number">NR—002</span><span class="game-open" aria-hidden="true">↗</span>
+                <span class="game-art-title">MIDNIGHT<br>DRIFT</span>
+                <span class="game-tag">COZY RACER</span>
+              </button>
+              <div class="game-details"><div><h3>Midnight Drift</h3><p>No map. No rush. Just neon.</p></div><span class="game-rating">✦ 4.8</span></div>
+            </article>
+            <article class="game-card card-spirit" data-category="action" data-name="spirit bloom">
+              <button class="game-art world-trigger" type="button" aria-label="Enter Spirit Bloom" aria-haspopup="dialog" aria-controls="world-dialog" data-world="spirit">
+                <img class="game-image" src="assets/spirit-forest.jpg" alt="" loading="lazy" decoding="async">
+                <span class="game-number">NR—003</span><span class="game-open" aria-hidden="true">↗</span>
+                <span class="game-art-title">SPIRIT<br>BLOOM</span>
+                <span class="game-tag">FANTASY QUEST</span>
+              </button>
+              <div class="game-details"><div><h3>Spirit Bloom</h3><p>Some magic grows wild.</p></div><span class="game-rating">✦ 4.9</span></div>
+            </article>
+            <article class="game-card card-pixel" data-category="classic" data-name="pixel ronin">
+              <button class="game-art world-trigger" type="button" aria-label="Enter Pixel Ronin" aria-haspopup="dialog" aria-controls="world-dialog" data-world="pixel">
+                <img class="game-image" src="assets/pixel-arcade.jpg" alt="" loading="lazy" decoding="async">
+                <span class="game-number">NR—004</span><span class="game-open" aria-hidden="true">↗</span>
+                <span class="game-art-title">PIXEL<br>RONIN</span>
+                <span class="game-tag">8-BIT CLASSIC</span>
+              </button>
+              <div class="game-details"><div><h3>Pixel Ronin</h3><p>Old-school heart, new-school soul.</p></div><span class="game-rating">✦ 4.7</span></div>
+            </article>
+            <article class="game-card card-cloud" data-category="chill" data-name="cloud nine">
+              <button class="game-art world-trigger" type="button" aria-label="Enter Cloud Nine" aria-haspopup="dialog" aria-controls="world-dialog" data-world="cloud">
+                <img class="game-image" src="assets/cloud-mountains.jpg" alt="" loading="lazy" decoding="async">
+                <span class="game-number">NR—005</span><span class="game-open" aria-hidden="true">↗</span>
+                <span class="game-art-title">CLOUD<br>NINE</span>
+                <span class="game-tag">LIFE SIM</span>
+              </button>
+              <div class="game-details"><div><h3>Cloud Nine</h3><p>Build a little life in the sky.</p></div><span class="game-rating">✦ 4.8</span></div>
+            </article>
+            <article class="game-card card-phantom" data-category="classic" data-name="phantom arcade">
+              <button class="game-art world-trigger" type="button" aria-label="Enter Phantom Arcade" aria-haspopup="dialog" aria-controls="world-dialog" data-world="phantom">
+                <img class="game-image" src="assets/phantom-night.jpg" alt="" loading="lazy" decoding="async">
+                <span class="game-number">NR—006</span><span class="game-open" aria-hidden="true">↗</span>
+                <span class="game-art-title">PHANTOM<br>ARCADE</span>
+                <span class="game-tag">ARCADE CLASSIC</span>
+              </button>
+              <div class="game-details"><div><h3>Phantom Arcade</h3><p>One more round. You know the drill.</p></div><span class="game-rating">✦ 4.6</span></div>
+            </article>
+          </div>
+          <p class="empty-state" id="empty-state" hidden>No worlds found in this universe. Try another search.</p>
+          <div class="worlds-footer"><span>SHOWING <strong id="visible-count">06</strong> WORLDS</span><span class="footer-line"></span><span>MORE WORLDS TRANSMITTING SOON <span class="live-dot"></span></span></div>
+        </section>
+
+        <dialog class="portal-dialog" id="world-dialog" aria-labelledby="portal-title" aria-describedby="portal-story">
+          <div class="portal-frame">
+            <div class="portal-visual">
+              <img id="portal-image" src="assets/oni-kyoto.jpg" alt="">
+              <span class="portal-transmission"><span class="live-dot"></span> INCOMING TRANSMISSION</span>
+              <span class="portal-coordinate" id="portal-coordinate">35°00' N / SIGNAL UNKNOWN</span>
+              <span class="portal-image-index" id="portal-image-index">NR—001</span>
+            </div>
+            <div class="portal-copy">
+              <button class="portal-close" id="portal-close" type="button" aria-label="Close world experience" autofocus>×</button>
+              <p class="eyebrow"><span class="section-number">✳</span> YOU FOUND A WAY THROUGH</p>
+              <p class="portal-number" id="portal-number">WORLD 01 / 06</p>
+              <h2 id="portal-title">Oni's Path</h2>
+              <p class="portal-type" id="portal-type">ACTION RPG <span>·</span> A STORY FROM THE OTHER SIDE</p>
+              <blockquote class="portal-story" id="portal-story"></blockquote>
+              <div class="portal-divider"><span>✳</span></div>
+              <div class="portal-controls">
+                <button class="portal-step" id="portal-previous" type="button" aria-label="Travel to previous world">← <span>PREVIOUS</span></button>
+                <button class="portal-next" id="portal-next" type="button">FOLLOW THE SIGNAL <span aria-hidden="true">↗</span></button>
+              </div>
+              <p class="portal-hint">ESC TO RETURN <span>·</span> ← → TO TRAVEL</p>
+            </div>
+          </div>
+        </dialog>
+
+        <section class="music-section" id="music" aria-labelledby="music-title">
+          <div class="music-copy">
+            <p class="eyebrow"><span class="live-dot"></span> THE NIGHT-SHIFT SOUNDTRACK</p>
+            <h2 id="music-title">Let the night<br><span>slow down.</span></h2>
+            <p>Settle into a calm piano, violin, and cello instrumental while you explore. Press play and let the music loop as long as you like.</p>
+            <a class="music-source" href="https://www.youtube.com/watch?v=fQrTAn8fWwU" target="_blank" rel="noopener noreferrer">HEAR IT ON YOUTUBE <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="music-player-wrap">
+            <iframe
+              class="music-player"
+              src="https://www.youtube-nocookie.com/embed/fQrTAn8fWwU?controls=1&amp;loop=1&amp;playlist=fQrTAn8fWwU&amp;playsinline=1&amp;rel=0"
+              title="Heavenly Music — relaxing violin, cello and piano instrumental"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="encrypted-media; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <p class="music-credit">“Heavenly Music” by <a href="https://www.youtube.com/@PrayerPray" target="_blank" rel="noopener noreferrer">Prayer Pray</a></p>
+          </div>
+        </section>
+
+        <section class="signal" id="signal" aria-labelledby="signal-title">
+          <div class="signal-grid"></div>
+          <div class="signal-content">
+            <p class="eyebrow"><span class="signal-icon">✳</span> A LITTLE NOTE FROM THE ARCADE</p>
+            <h2 id="signal-title">Good games.<br><span>Good people.</span><br>Zero gatekeeping.</h2>
+            <p class="signal-copy">We're here for the feeling. The late-night co-op, the worlds that stay with you, the classics you never forget. Find a game, find your people, stay a while.</p>
+            <a class="button button-light" href="index.html#discover">Back to the surface <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="signal-stamp" aria-hidden="true"><span>THE ARCADE IS<br>ALWAYS OPEN</span><b>✳</b><span>PRESS START · PRESS START ·</span></div>
+        </section>
+      </main>
+      <footer class="site-footer">
+        <a class="brand footer-brand" href="index.html#discover"><img class="brand-mark brand-logo" src="assets/logo-ronin-mask.svg" alt="" aria-hidden="true"><span class="brand-name">NEON<span>//</span>RONIN</span></a>
+        <span class="footer-note">MADE FOR THE LOVE OF THE GAME <span>✳</span></span>
+        <span class="copyright">PHOTOGRAPHY VIA <a href="https://unsplash.com/license" target="_blank" rel="noreferrer">UNSPLASH</a> · © 2026 NEON//RONIN</span>
+      </footer>
+    </div>
+  </body>
+</html>
